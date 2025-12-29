@@ -1,0 +1,35 @@
+def validate_ot_api_key(session, graphql_url):
+    query = {
+        "query": """
+        query ValidateOTAccess {
+          assets(first: 1) {
+            nodes {
+              id
+            }
+          }
+        }
+        """
+    }
+
+    resp = session.post(graphql_url, json=query, timeout=(10, 30))
+
+    # HTTP-level auth failure
+    if resp.status_code in (401, 403):
+        raise RuntimeError("OT API key authentication failed")
+
+    resp.raise_for_status()
+
+    payload = resp.json()
+
+    # GraphQL-level auth / permission failure
+    if "errors" in payload:
+        raise RuntimeError(
+            f"OT GraphQL permission error: {payload['errors']}"
+        )
+
+    # Structural sanity check
+    assets = payload.get("data", {}).get("assets", {}).get("nodes", [])
+    if not isinstance(assets, list):
+        raise RuntimeError("Unexpected OT GraphQL response structure")
+
+    return True
