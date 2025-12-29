@@ -1,0 +1,11 @@
+query getSystemLog {
+  systemLog {
+    nodes {
+      message
+      timeStamp
+      userName
+      __typename
+    }
+    __typename
+  }
+}
