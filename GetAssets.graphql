@@ -1,0 +1,32 @@
+query GetAssets($first: Int!, $after: String) {
+  assets(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    nodes {
+      id
+      name
+      assetType
+      vendor
+      model
+      firmwareVersion
+      serialNumber
+      criticality
+      role
+      safetyRated
+
+      ipAddresses
+      macAddresses
+      vlans
+      zones {
+        id
+        name
+      }
+
+      firstSeen
+      lastSeen
+      isActive
+    }
+  }
+}
