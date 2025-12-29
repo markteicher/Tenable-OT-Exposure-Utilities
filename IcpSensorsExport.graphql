@@ -1,0 +1,33 @@
+query IcpSensorsExport {
+  icpSensors {
+    nodes {
+      id
+      name
+      ip
+      internalIp
+      externalIp
+      natIp
+      version
+      osVersion
+      shortVersion
+      active
+      approved
+      status
+      statusTs
+      connectionStatus
+      tunnelStatus
+      error
+      errorTs
+      systemUpdatesExist
+      stockdogUpdateExists
+      updatableSensor
+      lastCheckForUpdates
+      updatingStatus
+      origin
+      baseName
+      awaitingFirstUse
+      bps
+      site
+    }
+  }
+}
