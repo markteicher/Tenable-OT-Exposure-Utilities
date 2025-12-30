@@ -1,0 +1,9 @@
+query GetPurdueLevels {
+  __type(name: "PurdueLevel") {
+    name
+    enumValues {
+      name
+      description
+    }
+  }
+}
