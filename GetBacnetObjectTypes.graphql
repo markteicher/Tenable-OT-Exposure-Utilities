@@ -1,0 +1,11 @@
+query GetBacnetObjectTypes {
+  bacnetObjectTypes {
+    nodes {
+      id
+      name
+      description
+      __typename
+    }
+    totalCount
+  }
+}
