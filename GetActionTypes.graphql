@@ -1,0 +1,12 @@
+query GetActionTypes {
+  actionTypes {
+    nodes {
+      id
+      name
+      description
+      category
+      __typename
+    }
+    totalCount
+  }
+}
