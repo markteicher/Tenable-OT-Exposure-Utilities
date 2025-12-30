@@ -1,0 +1,11 @@
+query GetAssetCategories {
+  assetCategories {
+    nodes {
+      id
+      name
+      description
+      __typename
+    }
+    totalCount
+  }
+}
