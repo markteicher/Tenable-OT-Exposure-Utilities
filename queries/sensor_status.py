@@ -3,22 +3,18 @@ queries/sensor_status.py
 
 Tenable OT Security – Sensor Status GraphQL Queries
 
-Source documentation:
-- SensorStatus: https://docs.tenable.com/OT-security/api/sensorstatus.doc.html
-- Query root:   https://docs.tenable.com/OT-security/api/query.doc.html
+Docs:
+- https://docs.tenable.com/OT-security/api/sensorstatus.doc.html
+- https://docs.tenable.com/OT-security/api/query.doc.html
 
 Purpose:
-- Export operational health and status of OT sensors (ICP / EM).
-- Capture connectivity, last-seen times, versioning, and runtime state.
-- Full-fidelity fields for JSON/CSV exporters (no opinionated pruning).
-
-Notes:
-- Sensor status is critical for validating coverage and data freshness.
-- Use pagination when querying lists.
+- Export full operational health of ICP / EM sensors
+- Capture connectivity, versioning, and runtime resource utilization
+- Designed for JSON / CSV export without lossy pruning
 """
 
 # ============================================================
-# All Sensor Status (Paged)
+# All Sensor Status (Paged, Full Telemetry)
 # ============================================================
 
 SENSOR_STATUS_QUERY = """
@@ -35,23 +31,51 @@ query GetSensorStatus($first: Int!, $after: String) {
       status
       state
       connected
+      enabled
+
+      firstSeen
       lastSeen
       lastSeenRaw
-      firstSeen
-      enabled
+
       version
       build
       uptime
       heartbeat
+
+      # ============================
+      # Resource Utilization
+      # ============================
+      cpuUsage
+      memoryUsage
+      diskUsage
+
+      # ============================
+      # Queue / Processing Health
+      # ============================
+      eventQueueSize
+      packetQueueSize
+      droppedPackets
+
+      # ============================
+      # Error / Health Indicators
+      # ============================
       error
+      warnings
+      healthScore
+
+      # ============================
+      # Location / Metadata
+      # ============================
       location
       site
+
       tags {
         nodes {
           id
           name
         }
       }
+
       interfaces {
         nodes {
           id
@@ -70,7 +94,7 @@ query GetSensorStatus($first: Int!, $after: String) {
 """
 
 # ============================================================
-# Sensor Status by ID (Targeted / Drill-down)
+# Sensor Status by ID (Deep Drill-Down)
 # ============================================================
 
 SENSOR_STATUS_BY_ID_QUERY = """
@@ -82,23 +106,39 @@ query GetSensorStatusById($id: ID!) {
     status
     state
     connected
+    enabled
+
+    firstSeen
     lastSeen
     lastSeenRaw
-    firstSeen
-    enabled
+
     version
     build
     uptime
     heartbeat
+
+    cpuUsage
+    memoryUsage
+    diskUsage
+
+    eventQueueSize
+    packetQueueSize
+    droppedPackets
+
     error
+    warnings
+    healthScore
+
     location
     site
+
     tags {
       nodes {
         id
         name
       }
     }
+
     interfaces {
       nodes {
         id
