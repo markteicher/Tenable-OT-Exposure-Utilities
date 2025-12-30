@@ -1,0 +1,19 @@
+query GetSafetyRatedAssets($first: Int!, $after: String) {
+  assets(
+    first: $first
+    after: $after
+    filter: { safetyRated: true }
+  ) {
+    nodes {
+      id
+      name
+      assetType {
+        name
+        isSafetyRelevant
+      }
+      criticality
+      role
+      __typename
+    }
+  }
+}
