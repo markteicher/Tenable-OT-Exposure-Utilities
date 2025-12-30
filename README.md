@@ -19,3 +19,9 @@ Production-grade GraphQL query templates for Tenable OT Security
 🚀 What This Repository Is
 
 This repository contains validated, GraphQL query templates for the Tenable OT Security GraphQL API, derived directly from the official documentation and GraphiQL Playground behavior.
+
+These queries are intended to:
+	-	✅ Work against real ICP / EM-backed OT data
+	-	✅ Support pagination, filtering, sorting
+	-	✅ Export cleanly to JSON or CSV
+	-	✅ Serve as building blocks for automation, reporting, and analytics
