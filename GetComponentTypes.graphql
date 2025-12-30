@@ -1,0 +1,16 @@
+query GetComponentTypes {
+  componentTypes {
+    totalCount
+    nodes {
+      id
+      name
+      category
+      description
+      isSoftware
+      isFirmware
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+}
