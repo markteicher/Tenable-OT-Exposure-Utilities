@@ -1,0 +1,14 @@
+query GetICPSensors {
+  icpSensors {
+    nodes {
+      id
+      name
+      status
+      lastSeen
+      ipAddress
+      firmwareVersion
+      __typename
+    }
+    totalCount
+  }
+}
