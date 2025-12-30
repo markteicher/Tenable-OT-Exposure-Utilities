@@ -1,0 +1,18 @@
+query GetRoles {
+  roles {
+    nodes {
+      id
+      name
+      description
+
+      isSystem
+      isReadOnly
+
+      permissions
+      scopes
+
+      createdAt
+      updatedAt
+    }
+  }
+}
