@@ -49,7 +49,7 @@ This project focuses on **validated, non-minimal GraphQL queries** that align di
 |------|-------------|
 | 🔌 OT Plugins | Plugin metadata, source, family, severity |
 | 📈 Risk Metrics | VPR, CVSS, unresolved events |
-| 🧠 NNM Enrichment | Extended plugin details and references |
+| 🧠 Asset Enrichment | Extended plugin details and references |
 | 🔗 Asset Impact | Plugin-to-asset relationships |
 
 ---
@@ -70,7 +70,7 @@ This project focuses on **validated, non-minimal GraphQL queries** that align di
 | 👤 Users | User accounts and roles |
 | 🔑 Authentication Validation | GraphQL-based API key verification |
 | 🧾 User Activity | Action types, policy interactions |
-| 🔍 Governance Visibility | User-driven operational actions |
+| 🔍 User Visibility | User-driven operational actions |
 
 ---
 
