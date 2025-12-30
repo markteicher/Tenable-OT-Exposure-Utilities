@@ -114,4 +114,64 @@ Each domain is implemented as a **standalone, paginated GraphQL query** aligned 
 ---
 
 ## 📁 Project Structure
+
+tenable-ot-graphql/
+├── README.md
+├── queries/
+│   ├── assets.graphql
+│   ├── events.graphql
+│   ├── plugins.graphql
+│   ├── sensors.graphql
+│   ├── users.graphql
+│   └── logs.graphql
+├── exporters/
+│   ├── json_exporter.py
+│   └── csv_exporter.py
+├── pagination/
+│   └── cursor_handler.py
+└── auth/
+└── api_key_validation.py
+
+
+---
+
+## 🎯 Design Principles
+
+- ✅ **Schema-First** – Queries align exactly with Tenable OT documentation 
+- 🔒 **Safe by Default** – Read-only GraphQL operations only  
+- 🧪 **Validated** – Designed to run in GraphiQL Playground  
+- 🧩 **Composable** – Each query stands alone  
+
+---
+
+## 🧪 Validation & Testing
+
+- Tested using Tenable OT **GraphiQL Playground**
+- Supports cursor-based pagination
+- Handles empty result sets gracefully
+- Validates API access before extraction
+
+---
+
+## 🏗️ Intended Use Cases
+
+- OT Asset Inventory Export
+- Sensor Health Auditing
+- OT Event Analysis
+- Vulnerability & Plugin Risk Analysis
+- Compliance & Architecture Mapping
+- SIEM / Data Lake Ingestion (tool-agnostic)
+
+---
+
+## 📚 References
+
+- Tenable OT GraphQL Playground  
+  https://developer.tenable.com/docs/ot-graphiql-playground
+
+- Tenable OT API Documentation  
+  https://docs.tenable.com/OT-security/api/
+
+---
+
 	
