@@ -1,0 +1,16 @@
+query GetOTVulnerabilities($first: Int!, $after: String) {
+  vulnerabilities(first: $first, after: $after) {
+    nodes {
+      id
+      cve
+      severity
+      description
+      affectedAssets {
+        id
+        name
+      }
+      __typename
+    }
+    totalCount
+  }
+}
