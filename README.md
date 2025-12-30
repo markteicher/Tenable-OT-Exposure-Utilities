@@ -113,28 +113,6 @@ Each domain is implemented as a **standalone, paginated GraphQL query** aligned 
 
 ---
 
-## 📁 Project Structure
-
-tenable-ot-graphql/
-├── README.md
-├── queries/
-│   ├── assets.graphql
-│   ├── events.graphql
-│   ├── plugins.graphql
-│   ├── sensors.graphql
-│   ├── users.graphql
-│   └── logs.graphql
-├── exporters/
-│   ├── json_exporter.py
-│   └── csv_exporter.py
-├── pagination/
-│   └── cursor_handler.py
-└── auth/
-└── api_key_validation.py
-
-
----
-
 ## 🎯 Design Principles
 
 - ✅ **Schema-First** – Queries align exactly with Tenable OT documentation 
