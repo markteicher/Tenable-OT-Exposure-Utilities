@@ -1,5 +1,6 @@
 query GetAssets($first: Int!, $after: String) {
   assets(first: $first, after: $after) {
+    totalCount
     pageInfo {
       hasNextPage
       endCursor
@@ -7,7 +8,12 @@ query GetAssets($first: Int!, $after: String) {
     nodes {
       id
       name
-      assetType
+      assetType {
+        id
+        name
+        category
+        isSafetyRelevant
+      }
       vendor
       model
       firmwareVersion
@@ -19,6 +25,7 @@ query GetAssets($first: Int!, $after: String) {
       ipAddresses
       macAddresses
       vlans
+
       zones {
         id
         name
@@ -27,6 +34,7 @@ query GetAssets($first: Int!, $after: String) {
       firstSeen
       lastSeen
       isActive
+      __typename
     }
   }
 }
