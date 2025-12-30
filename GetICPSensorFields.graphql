@@ -1,0 +1,11 @@
+query GetICPSensorFields {
+  icpSensorFields {
+    nodes {
+      name
+      dataType
+      description
+      __typename
+    }
+    totalCount
+  }
+}
