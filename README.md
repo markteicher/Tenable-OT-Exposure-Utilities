@@ -22,6 +22,10 @@ This repository contains validated, GraphQL query templates for the Tenable OT S
 
 These queries are intended to:
 	-	✅ Work against real ICP / EM-backed OT data
+	
 	-	✅ Support pagination, filtering, sorting
+	
 	-	✅ Export cleanly to JSON or CSV
+	
 	-	✅ Serve as building blocks for automation, reporting, and analytics
+	
