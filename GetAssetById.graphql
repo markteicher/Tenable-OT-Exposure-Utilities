@@ -1,0 +1,24 @@
+query GetAssetById($id: ID!) {
+  asset(id: $id) {
+    id
+    name
+    assetType
+    vendor
+    model
+    firmwareVersion
+    serialNumber
+    criticality
+    role
+    safetyRated
+    ipAddresses
+    macAddresses
+    vlans
+    zones {
+      id
+      name
+    }
+    firstSeen
+    lastSeen
+    isActive
+  }
+}
