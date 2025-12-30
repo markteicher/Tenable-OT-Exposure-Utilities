@@ -1,0 +1,19 @@
+query GetUsers($first: Int!, $after: String) {
+  users(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    nodes {
+      id
+      userName
+      fullName
+      email
+      role
+      isActive
+      lastLogin
+      createdAt
+      updatedAt
+    }
+  }
+}
