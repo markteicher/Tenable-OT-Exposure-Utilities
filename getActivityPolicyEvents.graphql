@@ -1,15 +1,20 @@
-query getActivityPolicyEvents {
-  activityPolicyEvents {
+query GetActivityPolicyEvents($first: Int!, $after: String) {
+  activityPolicyEvents(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
     nodes {
       id
-      actionType
+      policyName
       severity
-      description
-      createdAt
-      actor
-      source
+      action
+      detectedAt
+      asset {
+        id
+        name
+      }
       __typename
     }
-    __typename
   }
 }
