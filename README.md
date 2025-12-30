@@ -4,18 +4,17 @@ Tenable OT Exposure Utilities
 
 ⚠️ Disclaimer
 
-This tool is not an official Tenable product.
+These
+graphql examples are not an official Tenable product.
 
-Use of this software is not covered by any license, warranty, or support agreement you may have with Tenable.
+Use of this graphql queries are not covered by any license, warranty, or support agreement you may have with Tenable.
 All functionality is implemented independently using publicly available Tenable OT Exposure API documentation.
 
 # 🏭 Tenable OT GraphQL Exporter
 
 ## Overview
-Enterprise-grade GraphQL query framework for **Tenable OT Security**.  
-Designed to safely extract, paginate, and export **OT assets, events, sensors, policies, users, and operational telemetry** using Tenable OT’s native GraphQL API.
-
-This project focuses on **validated, non-minimal GraphQL queries** that align directly with Tenable OT’s documented schema and operational data model.
+Enterprise-grade GraphQL query framework for **Tenable OT Exposure**.  
+Designed to extract, paginate, and export **OT assets, events, sensors, policies, users, and operational telemetry** using Tenable OT Exposure's native GraphQL API
 
 ---
 
@@ -96,7 +95,7 @@ The exporter includes validated GraphQL coverage for:
 - Users
 - System Logs
 
-Each domain is implemented as a **standalone, paginated GraphQL query** aligned with Tenable OT documentation.
+Each component is implemented as a **standalone, paginated GraphQL query** aligned with Tenable OT Exposure documentation.
 
 ---
 
@@ -104,7 +103,7 @@ Each domain is implemented as a **standalone, paginated GraphQL query** aligned 
 
 | Component | Purpose |
 |--------|--------|
-| 🧠 GraphQL Templates | Schema-aligned, non-minimal queries |
+| 🧠 GraphQL Templates | Schema-aligned queries |
 | 🔁 Pagination Engine | Cursor-based extraction |
 | 🧪 Validation Layer | API key and permission validation |
 | 📦 Export Formats | JSON and CSV ready |
@@ -115,7 +114,7 @@ Each domain is implemented as a **standalone, paginated GraphQL query** aligned 
 
 ## 🎯 Design Principles
 
-- ✅ **Schema-First** – Queries align exactly with Tenable OT documentation 
+- ✅ **Schema-First** – Queries align exactly with Tenable OT Exposure documentation 
 - 🔒 **Safe by Default** – Read-only GraphQL operations only  
 - 🧪 **Validated** – Designed to run in GraphiQL Playground  
 - 🧩 **Composable** – Each query stands alone  
@@ -124,7 +123,7 @@ Each domain is implemented as a **standalone, paginated GraphQL query** aligned 
 
 ## 🧪 Validation & Testing
 
-- Tested using Tenable OT **GraphiQL Playground**
+- Tested using Tenable OT Exposure **GraphiQL Playground**
 - Supports cursor-based pagination
 - Handles empty result sets gracefully
 - Validates API access before extraction
@@ -137,17 +136,17 @@ Each domain is implemented as a **standalone, paginated GraphQL query** aligned 
 - Sensor Health Auditing
 - OT Event Analysis
 - Vulnerability & Plugin Risk Analysis
-- Compliance & Architecture Mapping
+- IoT/OT discovery, identification, classification mapping based on multiple asset attributes not IP address
 - SIEM / Data Lake Ingestion (tool-agnostic)
 
 ---
 
 ## 📚 References
 
-- Tenable OT GraphQL Playground  
+- Tenable OT Exposure GraphQL Playground  
   https://developer.tenable.com/docs/ot-graphiql-playground
 
-- Tenable OT API Documentation  
+- Tenable OT Exposure API Documentation  
   https://docs.tenable.com/OT-security/api/
 
 ---
