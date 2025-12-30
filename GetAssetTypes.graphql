@@ -1,0 +1,16 @@
+query GetAssetTypes {
+  assetTypes {
+    totalCount
+    nodes {
+      id
+      name
+      description
+      category
+      isSafetyRelevant
+      isCriticalInfrastructure
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+}
