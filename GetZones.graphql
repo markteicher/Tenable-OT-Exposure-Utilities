@@ -1,0 +1,12 @@
+query GetZones {
+  zones {
+    nodes {
+      id
+      name
+      description
+      assetCount
+      __typename
+    }
+    totalCount
+  }
+}
