@@ -1,0 +1,20 @@
+query GetAssetCommunications($first: Int!, $after: String) {
+  assetCommunications(first: $first, after: $after) {
+    nodes {
+      sourceAsset {
+        id
+        name
+      }
+      destinationAsset {
+        id
+        name
+      }
+      protocol
+      port
+      firstSeen
+      lastSeen
+      __typename
+    }
+    totalCount
+  }
+}
