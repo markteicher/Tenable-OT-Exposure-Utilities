@@ -1,0 +1,15 @@
+query getActivityPolicyEvents {
+  activityPolicyEvents {
+    nodes {
+      id
+      actionType
+      severity
+      description
+      createdAt
+      actor
+      source
+      __typename
+    }
+    __typename
+  }
+}
