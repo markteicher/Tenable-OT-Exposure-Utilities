@@ -1,0 +1,14 @@
+query GetAssetFields {
+  assetFields {
+    nodes {
+      name
+      displayName
+      dataType
+      isArray
+      isNullable
+      description
+      __typename
+    }
+    totalCount
+  }
+}
