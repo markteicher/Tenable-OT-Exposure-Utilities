@@ -1,11 +1,17 @@
-query getSystemLog {
-  systemLog {
+query GetSystemLogs($first: Int!, $after: String) {
+  systemLogs(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
     nodes {
+      id
       message
-      timeStamp
+      severity
       userName
+      createdAt
+      source
       __typename
     }
-    __typename
   }
 }
