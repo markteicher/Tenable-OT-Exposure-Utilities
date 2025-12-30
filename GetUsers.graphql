@@ -6,14 +6,33 @@ query GetUsers($first: Int!, $after: String) {
     }
     nodes {
       id
-      userName
-      fullName
+      username
+      displayName
       email
+      authType
+      provider
+      externalId
+
       role
-      isActive
-      lastLogin
+      permissions
+      isSystem
+      isReadOnly
+
+      enabled
+      locked
+      failedLoginAttempts
+
       createdAt
-      updatedAt
+      lastLogin
+      lastActivity
+      passwordChangedAt
+
+      groups {
+        nodes {
+          id
+          name
+        }
+      }
     }
   }
 }
