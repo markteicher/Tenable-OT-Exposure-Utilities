@@ -19,7 +19,7 @@ Cursor-based pagination (not offset-based)
 
 How enums actually constrain valid queries
 
-How permissions and capabilities gate fields
+How permissions and capabilities gate fields are implemented
 
 How vendor-specific modeling choices work
 
