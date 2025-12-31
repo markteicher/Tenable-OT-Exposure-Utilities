@@ -5,9 +5,9 @@ Tenable OT Exposure is a very expensive solution compared to other OT Solutions 
 
 GraphQL API for Tenable OT is poorly documented
 
-Only 3 GraphQL examples provided
+Only 3 GraphQL examples provided, really not useful if advertising the platform is Enterprise Grade
 
-Extensive, painstakong schema harvesting, reverse mapping/reverse-engineering to provide Executive Level, Senior Management, Asset Custodians at a glance Visualizations without requiring access to the TenableOne or TenableOT Platform.
+Extensive, painstaking schema harvesting, reverse mapping/reverse-engineering to provide Executive Level, Senior Management, Asset Custodians at a glance Visualizations without requiring access to the TenableOne or TenableOT Platform.
 
 ⚠️ Disclaimer
 
