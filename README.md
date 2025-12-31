@@ -1,9 +1,11 @@
 # Tenable-OT-Exposure-Utilities
 Tenable OT Exposure Utilities
 
-Tenable OT Exposure is a very expensive solution compared to other OT Solutions from licensing to physical hardware
+Tenable OT Exposure is a very expensive solution compared to other OT Solutions from licensing to physical hardware to being able to extract the information due to limited export capabilities via .json, .csv, .pdf. 
 
-GraphQL API for Tenable OT is poorly documented
+There is NO simple Quickstart as advertised by Tenable regarding up and running in less than 5 days. 
+
+GraphQL API for Tenable OT is poorly documented, it takes day in and day out years to master GraphQL Schema archaeology + API reconstruction + OT domain modeling then apply that to Tenable's attempt after Indegy ICS acquisition where most Enterprises will leverage less than 1% of the API capabilities, only focus on OT Vulnerabilities that only provides views to last 60 days if that through the User Interface. 
 
 Only 3 GraphQL examples provided, really not useful if advertising the platform is Enterprise Grade
 
