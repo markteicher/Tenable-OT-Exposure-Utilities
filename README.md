@@ -12,11 +12,16 @@ Only 3 GraphQL examples provided, really not useful if advertising the platform 
 Extensive, painstaking schema harvesting, reverse mapping/reverse-engineering to provide Executive Level, Senior Management, Asset Custodians at a glance Visualizations without requiring access to the TenableOne or TenableOT Platform.
 
 ## Skills Required
-•	Schema-first thinking (types, enums, connections, edges)
-	•	Cursor-based pagination (not offset-based)
-	•	How enums actually constrain valid queries
-	•	How permissions and capabilities gate fields
-	•	How vendor-specific modeling choices work
+
+Schema-first thinking (types, enums, connections, edges)
+
+Cursor-based pagination (not offset-based)
+
+How enums actually constrain valid queries
+
+How permissions and capabilities gate fields
+
+How vendor-specific modeling choices work
 
 ⚠️ Disclaimer
 
