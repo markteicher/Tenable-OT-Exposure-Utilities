@@ -1,0 +1,52 @@
+"""
+queries/detailed_policy_finding_field.py
+
+Tenable OT Security – DetailedPolicyFindingField GraphQL Enum
+
+Source documentation:
+https://docs.tenable.com/OT-security/api/detailedpolicyfindingfield.doc.html
+
+Purpose:
+- Enumerates selectable and sortable fields for detailed policy finding queries
+"""
+
+DETAILED_POLICY_FINDING_FIELD_ENUM_NAME = "DetailedPolicyFindingField"
+
+DETAILED_POLICY_FINDING_FIELDS = [
+    "id",
+    "policyId",
+    "eventType",
+    "category",
+    "severity",
+    "status",
+    "firstHitTime",
+    "lastHitTime",
+    "srcAssets",
+    "dstAssets",
+    "srcNames",
+    "dstNames",
+    "assetsTypes",
+    "assetsCriticalities",
+    "assetsPurdueLevels",
+    "assetsVendors",
+    "assetsFamilies",
+    "assetsModels",
+    "assetsLocations",
+    "srcIps",
+    "dstIps",
+    "protocols",
+    "activeHits",
+    "resolvedHits",
+    "pluginId",
+    "pluginName",
+    "pluginSynopsis",
+    "pluginDescription",
+    "pluginSolution",
+    "mitreTechniques",
+    "mitreTactics",
+    "resolvedOn",
+    "resolvedUser",
+    "comment",
+    "lastHitId",
+    "policyTitle",
+]
