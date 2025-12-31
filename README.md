@@ -1,6 +1,15 @@
 # Tenable-OT-Exposure-Utilities
 Tenable OT Exposure Utilities
 
+	- Tenable OT Exposure is expensive
+	
+	- The GraphQL API is under-documented
+	
+	- Only ~3 Graphql examples provided
+	
+	- The real work requires painstaking schema harvesting, enum-by-enum
+	
+	- This is not trivial engineering — it’s platform reverse-mapping/engineering
 
 ⚠️ Disclaimer
 
