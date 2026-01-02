@@ -1,11 +1,18 @@
 # Tenable-OT-Exposure-Utilities
 Tenable OT Exposure Utilities
 
-Tenable OT Exposure is a very expensive solution compared to other OT Solutions from licensing to physical hardware to being able to extract the information due to limited export capabilities via .json, .csv, .pdf. 
+Tenable OT Exposure is a very expensive solution compared to other OT Solutions from licensing to physical hardware to being able to extract the information due to limited export capabilities via .json, .csv, .pdf. or PowerBI
 
-There is NO simple Quickstart as advertised by Tenable regarding up and running in less than 5 days. 
+⚠️ Disclaimer
 
-GraphQL API for Tenable OT is poorly documented, it takes day in and day out years to master GraphQL Schema archaeology + API reconstruction + OT domain modeling then apply that to Tenable's attempt after Indegy ICS acquisition where most Enterprises will leverage less than 1% of the API capabilities, only focus on OT Vulnerabilities that only provides views to last 60 days if that through the User Interface. 
+## NO SIMPLE QUICKSTART
+
+There is NO simple Quickstart as advertised by Tenable regarding up and running in less than 5 days in an Enterprise grade environment. There is shipping of actual physical hardware, there are network placement requests, placing the physical appliances at the correct location, 30+ step for configuration for each physical appliance, more for virtual (they don't provide much value for an Enterprise Grade environment), Tenable's Quickstart OT effort does not include API testing at all, which makes it much more complex on Enterprises are evaluating OT/IOT Enterprise grade solutions without a documented test plan, granular project plan, and 'official' defect tracker, as compared to other OT Enterprise Grade solutions, this platform needs lots of work versus just advertising as part of the Unifified Exposure Management platform.
+
+⚠️ Disclaimer
+
+GraphQL API for Tenable OT is poorly documented, it takes years to master GraphQL Schema archaeology + API reconstruction + OT domain modeling then apply that to Tenable's attempt after Indegy ICS acquisition where most Enterprises will leverage less than 1% of the API capabilities, 
+Only focus on OT Vulnerabilities that only provides limited view and multiple column selection to provide visible data to the authorized administrators, no Enterprise would grant access to asset owners at scale for limited views on discovered assets. The User Interface is not designed for large scale administration for asset owners, no operational management for operational utilization, health, user monitoring, activity day over day, week over week, month over month, quarter over quarter, year over year. No User Access Reviews, No Asset fatigure review, no Policy fatigure is covered.
 
 Only 3 GraphQL examples provided, really not useful if advertising the platform is Enterprise Grade
 
@@ -25,10 +32,8 @@ How vendor-specific modeling choices work
 
 ⚠️ Disclaimer
 
-These
-graphql examples are not an official Tenable product.
 
-Use of this graphql queries are not covered by any license, warranty, or support agreement you may have with Tenable.
+Use of this package are not covered by any license, warranty, or support agreement you may have with Tenable.
 All functionality is implemented independently using publicly available Tenable OT Exposure API documentation.
 
 # 🏭 Tenable OT GraphQL Exporter
