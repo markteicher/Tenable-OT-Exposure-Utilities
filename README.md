@@ -32,24 +32,36 @@ as compared to other OT Enterprise Grade solutions, this platform needs lots of 
 
 ⚠️ Disclaimer
 
-GraphQL API for Tenable OT is poorly documented, it takes years to master GraphQL Schema archaeology + API reconstruction + OT domain modeling then apply that to Tenable's attempt after Indegy ICS acquisition where most Enterprises will leverage less than 1% of the API capabilities, 
-Only focus on OT Vulnerabilities that only provides limited view and multiple column selection to provide visible data to the authorized administrators, no Enterprise would grant access to asset owners at scale for limited views on discovered assets. The User Interface is not designed for large scale administration for asset owners, no operational management for operational utilization, health, user monitoring, activity day over day, week over week, month over month, quarter over quarter, year over year. No User Access Reviews, No Asset fatigure review, no Policy fatigure is covered.
+- Only 3 GraphQL examples provided, really not useful if advertising the platform is Enterprise Grade
 
-Only 3 GraphQL examples provided, really not useful if advertising the platform is Enterprise Grade
+- GraphQL API for Tenable OT is poorly documented, it takes years to master GraphQL Schema archaeology + API reconstruction + OT domain modeling then apply that to Tenable's attempt after Indegy ICS acquisition where most Enterprises will leverage less than 1% of the API capabilities
 
-Extensive, painstaking schema harvesting, reverse mapping/reverse-engineering to provide Executive Level, Senior Management, Asset Custodians at a glance Visualizations without requiring access to the TenableOne or TenableOT Platform.
+- Only focus on OT Vulnerabilities that only provides limited view and multiple column selection to provide visible data to the authorized administrators, no Enterprise would grant access to asset owners at scale for limited views on discovered assets.
+- 
+- The User Interface is not designed for large scale administration for asset owners, no operational management for operational utilization, health, user monitoring, activity day over day, week over week, month over month, quarter over quarter, year over year.
+- 
+- No User Access Reviews, No Asset fatigure review, no Policy fatigure is covered.
+  
+
+
 
 ## Skills Required
 
-Schema-first thinking (types, enums, connections, edges)
+- Years of Extensive GraphQL Experience
 
-Cursor-based pagination (not offset-based)
+- Years of schema design and harvesting
 
-How enums actually constrain valid queries
+- Years of reverse-engineering/reverse mapping to provide Executive Level, Senior Management, Asset Custodians at a glance Visualizations without requiring access to the TenableOne or TenableOT Platform.
 
-How permissions and capabilities gate fields are implemented
+- Schema-first thinking (types, enums, connections, edges)
 
-How vendor-specific modeling choices work
+- Cursor-based pagination (not offset-based)
+
+- How enums actually constrain valid queries
+
+- How permissions and capabilities gate fields are implemented
+
+- How vendor-specific modeling choices work
 
 ⚠️ Disclaimer
 
