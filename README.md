@@ -1,7 +1,9 @@
 # Tenable-OT-Exposure-Utilities
 Tenable OT Exposure Utilities
 
-Tenable OT Exposure is a very expensive solution compared to other OT Solutions from licensing to physical hardware to being able to extract the information due to limited export capabilities via .json, .csv, .pdf. or PowerBI
+- Tenable OT Exposure is a very complex solution with leftover components from Indegy ICS 
+- Compared to other OT Solutions from licensing to physical hardware to being able to extract the information due to limited export capabilities via .json, .csv, .pdf. or PowerBI
+- It requires months of testing versus 30-60 days 
 
 ⚠️ Disclaimer
 
