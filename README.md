@@ -7,7 +7,28 @@ Tenable OT Exposure is a very expensive solution compared to other OT Solutions 
 
 ## NO SIMPLE QUICKSTART
 
-There is NO simple Quickstart as advertised by Tenable regarding up and running in less than 5 days in an Enterprise grade environment. There is shipping of actual physical hardware, there are network placement requests, placing the physical appliances at the correct location, 30+ step for configuration for each physical appliance, more for virtual (they don't provide much value for an Enterprise Grade environment), Tenable's Quickstart OT effort does not include API testing at all, which makes it much more complex on Enterprises are evaluating OT/IOT Enterprise grade solutions without a documented test plan, granular project plan, and 'official' defect tracker, as compared to other OT Enterprise Grade solutions, this platform needs lots of work versus just advertising as part of the Unifified Exposure Management platform.
+There is NO simple Quickstart as advertised by Tenable regarding up and running in less than 5 days in an Enterprise grade environment. 
+
+There is shipping of actual physical hardware, there are network placement requests, placing the physical appliances at the correct location.
+
+30+ step for configuration for each physical appliance, more for virtual (they don't provide much value for an Enterprise Grade environment)
+
+Tenable's Quickstart OT effort does not include API testing at all, which makes it much more complex on Enterprises are evaluating OT/IOT Enterprise grade solutions without the following:
+
+- A documented Requirements Traceability Matrix Document
+- Granular Example Use Case Document
+- Pre-defined granular project plan
+- User Documentation Review
+- Installation Review
+- Initial Setup Review
+- 'official' defect tracker
+- High Level Testing Document
+- High Level Executive Presentation
+- Detailed Testing Document
+- Detailed Report
+
+
+as compared to other OT Enterprise Grade solutions, this platform needs lots of work versus just advertising as part of the Unifified Exposure Management platform.
 
 ⚠️ Disclaimer
 
