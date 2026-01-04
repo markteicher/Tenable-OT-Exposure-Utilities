@@ -86,4 +86,5 @@ USER_DEFINED_ASSET_TYPE = [
     "Ied",
     "Dcs",
     "Plc",
+    "_RemoveUserDefinedValue"
 ]
