@@ -1,3 +1,5 @@
+![Tenable OT Security](docs/images/tenable_ot_security.jpg)
+
 # Tenable-OT-Exposure-Utilities
 Tenable OT Exposure Utilities
 
