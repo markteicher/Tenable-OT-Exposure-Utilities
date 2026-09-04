@@ -11,13 +11,13 @@ Tenable OT Exposure Utilities
 
 ## NO SIMPLE QUICKSTART
 
-There is NO simple Quickstart as advertised by Tenable regarding up and running in less than 5 days in an Enterprise grade environment. 
+There is NO simple Quickstart as advertised regarding up and running in less than 5 days in an Enterprise grade environment. 
 
 There is shipping of actual physical hardware, there are network placement requests, placing the physical appliances at the correct location.
 
-30+ step for configuration for each physical appliance, more for virtual (they don't provide much value for an Enterprise Grade environment)
+30+ step for configuration for each physical appliance, more for virtual
 
-Tenable's Quickstart OT effort does not include API testing at all, which makes it much more complex on Enterprises are evaluating OT/IOT Enterprise grade solutions without the following:
+Quickstart OT effort does not include API testing at all, which makes it much more complex on Enterprises are evaluating OT/IOT Enterprise grade solutions without the following:
 
 - A documented Requirements Traceability Matrix Document
 - Granular Example Use Case Document
@@ -31,38 +31,9 @@ Tenable's Quickstart OT effort does not include API testing at all, which makes 
 - Detailed Testing Document
 - Detailed Report
 
-
-as compared to other OT Enterprise Grade solutions, this platform needs lots of work versus just advertising as part of the Unifified Exposure Management platform.
-
-⚠️ Disclaimer
-
-- Only 3 GraphQL examples provided, really not useful if advertising the platform is Enterprise Grade
-
-- GraphQL API for Tenable OT is poorly documented, it takes years to master GraphQL Schema archaeology + API reconstruction + OT domain modeling then apply that to Tenable's attempt after Indegy ICS acquisition where most Enterprises will leverage less than 1% of the API capabilities
-- Only focus on OT Vulnerabilities that only provides limited view and multiple column selection to provide visible data to the authorized administrators, no Enterprise would grant access to asset owners at scale for limited views on discovered assets.
-- The User Interface is not designed for large scale administration for asset owners, no operational management for operational utilization, health, user monitoring, activity day over day, week over week, month over month, quarter over quarter, year over year.
-- No User Access Reviews, No Asset fatigure review, no Policy fatigure is covered.
-  
+---
 
 
-
-## Skills Required
-
-- Years of Extensive GraphQL Experience
-
-- Years of schema design and harvesting
-
-- Years of reverse-engineering/reverse mapping to provide Executive Level, Senior Management, Asset Custodians at a glance Visualizations without requiring access to the TenableOne or TenableOT Platform.
-
-- Schema-first thinking (types, enums, connections, edges)
-
-- Cursor-based pagination (not offset-based)
-
-- How enums actually constrain valid queries
-
-- How permissions and capabilities gate fields are implemented
-
-- How vendor-specific modeling choices work
 
 ⚠️ Disclaimer
 
